@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu-HU">
+<head>
+	<title>Űrlap házifeladat: harmadik feladat.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		Body
+		{
+			margin:0px;
+			padding:0px;
+		}
+		.urlapkeret
+		{
+			width:500px;
+			margin-top: 50px;
+			margin-left: 400px;
+			padding:10px;
+			border: 3px solid #666666;
+			border-radius: 15px;
+			background: #2eb82e;
+		}
+		.bevmezo{
+			margin-bottom:8px;
+			border:none;
+			border-bottom:1px solid #999999;
+			width:95%;
+			padding:5px;
+		}		
+		.cim
+		{
+			font-size:30px;
+			font-weight: bold;
+			color: #666666;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<FIELDSET class="urlapkeret">
+		<LEGEND class="cim">Kedvencek</LEGEND>
+		
+		<FORM method="POST">
+			<INPUT type="text" class="bevmezo" placeholder="Állatka neve...">
+			<INPUT type="number" class="bevmezo" placeholder="Fajtája...">
+			
+			<DIV style="margin-top:10px; margin-bottom:10px">
+				Az állatka neme:	
+				<INPUT type="radio" name="nem" value="1">Nőstény
+				<INPUT type="radio" name="nem" value="1">Hím		
+			</DIV>
+
+			<INPUT type="text" class="bevmezo" placeholder="Állatka színe...">
+			<INPUT type="text" class="bevmezo" placeholder="Állatka életkora...">
+
+			<br>
+			<br>
+
+			<INPUT type="submit" value="Felvesz">
+			<INPUT type="submit" value="Törlés">
+		</FORM>			
+	</FIELDSET>
+	
+
+
+</body>
+</html>
