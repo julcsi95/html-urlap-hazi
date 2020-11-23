@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu-HU">
+<head>
+	<title>Űrlap házifeladat: második feladat.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		Body
+		{
+			margin:0px;
+			padding:0px;
+		}
+		.urlapkeret
+		{
+			width:400px;
+			padding:10px;
+			border-radius:10px;
+			background:skyblue;
+		}
+		.bevmezo{
+			margin-bottom:8px;
+			border:none;
+			border-bottom:1px solid #999999;
+			width:95%;
+			padding:5px;
+		}		
+		.cim
+		{
+			font-size:30px;
+			font-weight: bold;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<FIELDSET class="urlapkeret">
+		<LEGEND class="cim">Önéletrajz</LEGEND>
+		
+		<FORM method="POST">
+			<INPUT type="text" class="bevmezo" placeholder="Név...">
+			<INPUT type="number" class="bevmezo" placeholder="Életkor...">
+			
+			<DIV>
+				<INPUT type="text" class="bevmezo" placeholder="Ir. szám..." style="width:20%">
+				<INPUT type="text" class="bevmezo" placeholder="Város..." style="width:30%">
+				<INPUT type="text" class="bevmezo" placeholder="Utcac, házszám" style="width:40%">
+			</DIV>	
+			
+			<DIV>
+				<SELECT class="listamezo" size="0">
+					<OPTION value="0">Foglakozása</OPTION>
+					<OPTION value="20">Közgazdász</OPTION>
+					<OPTION value="20">Informatikus</OPTION>
+					<OPTION value="20">Mérnők</OPTION>
+					<OPTION value="20">Segédmunkás</OPTION>
+					<OPTION value="20">Egyéni vállakozó</OPTION>
+				</SELECT>
+			</DIV>
+			
+			<DIV style="margin-top:10px">
+				Az Ön neme:	
+				<br>
+				<INPUT type="radio" name="nem" value="1">Nő
+				<INPUT type="radio" name="nem" value="1">Férfi		
+			</DIV>
+			<br>
+			
+			<INPUT type="submit" value="Önéletrajz elkészítése">
+		</FORM>			
+	</FIELDSET>
+	
+
+
+</body>
+</html>
